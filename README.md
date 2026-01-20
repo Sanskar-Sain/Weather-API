@@ -1,36 +1,38 @@
-# 🌦️ Weather API Web App
+# 🌦️ Weather API Web Application
 
-A simple and responsive **Weather Application** built using **HTML, CSS, and JavaScript** that fetches real-time weather data using a Weather API. Users can search for any city and instantly get current weather information.
+A modern, responsive **Weather Web Application** built using **HTML, CSS, and JavaScript**.  
+This application allows users to search for any city and view **real-time weather data** including temperature, humidity, wind speed, and weather conditions using a public Weather API.
 
 ---
 
 ## 🚀 Features
 
 - 🔍 Search weather by city name  
-- 🌡️ Displays temperature in Celsius  
-- ☁️ Shows weather condition with icons  
-- 💧 Displays humidity  
-- 🌬️ Displays wind speed  
-- ❌ Error message for invalid city names  
-- 📱 Responsive and clean UI  
+- 🌡️ Temperature displayed in Celsius  
+- ☁️ Dynamic weather icons based on conditions  
+- 💧 Humidity percentage  
+- 🌬️ Wind speed details  
+- ❌ Error handling for invalid city names  
+- 📱 Responsive and user-friendly UI  
 
 ---
 
 ## 🛠️ Technologies Used
 
 - **HTML5** – Structure  
-- **CSS3** – Styling & layout  
-- **JavaScript (ES6)** – Logic & API handling  
+- **CSS3** – Styling and layout  
+- **JavaScript (ES6)** – Logic and API handling  
 - **Weather API** – Real-time weather data  
 
 ---
 
 ## 📂 Project Structure
+
 Weather-API/
 │
-├── index.html
-├── style.css
-├── images/
+├── index.html # Main HTML file
+├── style.css # CSS styles
+├── images/ # Weather icons and assets
 │ ├── clouds.png
 │ ├── rain.png
 │ ├── sunny.png
@@ -43,24 +45,55 @@ Weather-API/
 
 ---
 
-## ⚙️ How to Run the Project
+## ⚙️ Installation & Setup
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Sanskar-Sain/Weather-API.git
-2. Open the project folder:
-   cd Weather-API
-3.Open index.html in your browser
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/Sanskar-Sain/Weather-API.git
+
+### 2️⃣ Navigate to the Project Directory
+cd Weather-API
+
+### 3️⃣ Run the Application
+
+Open index.html in any modern browser
 OR
-Use VS Code Live Server extension.
 
-# 🔑 API Setup (Important)
+Open the project in VS Code and use the Live Server extension
 
-1. Get your free API key from a weather service (e.g., OpenWeatherMap).
-2. Replace the API key in your JavaScript file:
+## 🔑 API Configuration (Required)
+
+Register on a weather API provider (e.g., OpenWeatherMap).
+
+Generate your free API key.
+
+Open your JavaScript file and replace:
+
 const apiKey = "YOUR_API_KEY_HERE";
 
+## 📖 How to Use
+
+1. Open the application in your browser
+2. Enter a city name in the search input
+-> Example: Delhi, London, New York
+3. Click the Search button
+4. View the displayed weather details:
+
+-> 🌡️ Temperature
+
+-> ☁️ Weather condition
+
+-> 💧 Humidity
+
+-> 🌬️ Wind speed
+5. If an invalid city is entered, an error message will be shown
+
+## ❌ Error Handling
+
+Displays "Invalid City Name" for incorrect inputs
+
+Prevents app crashes on empty or invalid searches
 
 ## 👨‍💻 Author
+
 Sanskar Sain
-GitHub: Sanskar-Sain
