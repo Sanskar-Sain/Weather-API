@@ -10,7 +10,7 @@
     
     <div class="card">
         <div class="search">
-            <input type="text" placeholder="Enter city name" spellcheck="false">
+            <input type="text" placeholder="Enter City Name" spellcheck="false">
             <button><img src="images/photo.jpg.png" alt="Search"></button>
         </div>
 
@@ -51,6 +51,21 @@ const searchBtn = document.querySelector(".search button");
 const weatherIcon = document.querySelector(".weather-icon");
 
 
+
+
+function searchCity() {
+    if (searchBox.value.trim() !== "") {
+        checkWeather(searchBox.value);
+    }
+}
+
+
+
+
+
+
+
+
 async function checkWeather(city){
   const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
 
@@ -67,7 +82,7 @@ var data = await response.json();
   document.querySelector(".Wind").innerHTML = data.wind.speed + "km/h";
 
   if(data.weather[0].main == "Clouds"){
-    weatherIcon.src = "images/clouds.png";
+    weatherIcon.src = "images/sunandclouds1.png";
   }
   else if(data.weather[0].main == "Clear"){
     weatherIcon.src = "images/sunny.png";
@@ -79,7 +94,7 @@ var data = await response.json();
     weatherIcon.src = "images/rain.png";
   }
   else if(data.weather[0].main == "Mist"){
-    weatherIcon.src = "images/sunandclouds1.png";
+    weatherIcon.src = "images/clouds.png";
   }
 
   document.querySelector(".weather").style.display = "block";
@@ -90,9 +105,24 @@ var data = await response.json();
 
 }
 
-searchBtn.addEventListener("click", ()=>{
-    checkWeather(searchBox.value);
+
+
+
+
+
+
+searchBtn.addEventListener("click", searchCity);
+
+searchBox.addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+        searchCity();
+    }
 });
+
+
+
+
+
 
 
     </script>

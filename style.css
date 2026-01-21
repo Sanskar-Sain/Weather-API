@@ -30,7 +30,7 @@ body{
 .search input{
     background: #ebfffc;
     height: 60px;
-    padding: 10 25px;
+    padding: 10px 25px;
     border-radius: 30px;
     border: 0;
     outline: 0;
@@ -107,4 +107,14 @@ body{
     font-size: 14px;
     margin-top: 10px;
     display: none;
+}
+
+
+
+.search input::placeholder {
+    color: #888;
+    font-size: 16px;
+}
+.search input {
+    box-sizing: border-box;
 }
