@@ -5,7 +5,12 @@ This application allows users to search for any city and view **real-time weathe
 
 ---
 
-## 🚀 Features
+## 🚀 Live Demo
+https://sparkling-malabi-182cb9.netlify.app/
+
+---
+
+## 📌 Features
 
 - 🔍 Search weather by city name  
 - 🌡️ Temperature displayed in Celsius  
